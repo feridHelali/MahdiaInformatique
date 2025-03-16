@@ -1,7 +1,7 @@
 import express from "express"
 import morgan from "morgan"
 import cors from "cors"
-
+import catalogRouter from "./routers/catalog.routes.mjs"
 
 
 const app = express()
@@ -11,9 +11,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(morgan("dev"))
 
-app.get('/', (req, res, next) => {
-    res.json({ message: "Hello Mahdia Informatique" })
-})
+app.use("/api/v1/products",catalogRouter)
 
 app.use((error, req, res, next) => {
     res.status(500).json({

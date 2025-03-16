@@ -1,0 +1,11 @@
+POST http://localhost:3000/api/v1/products/add
+Content-Type: application/json
+
+{
+    "label":"Ordinateur Sony Vio i7 Laptop",
+    "brand":"Sony",
+    "description":"Screen diamond",
+    "price":4250.123
+
+
+}
