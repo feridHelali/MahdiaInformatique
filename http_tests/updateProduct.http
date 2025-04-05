@@ -1,0 +1,9 @@
+PUT http://localhost:5000/api/v1/products/update/67d6b24d0ca34006f2914c59
+Content-Type: application/json
+
+{
+    "label":"Ordinateur Toshiba i5",
+    "brand":"Toshiba",
+    "description":"For gamer",
+    "price":2500.123
+}
