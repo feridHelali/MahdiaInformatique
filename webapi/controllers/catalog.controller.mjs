@@ -1,3 +1,6 @@
+import { productCoverUpload } from "../midllwares/multer.mjs";
+import Product from '../models/product.model.mjs'
+
 import { addProductToCatalog, getAllProducts, getProductById, removeProduct, updateProduct } from "../services/product.service.mjs"
 
 export const addProductController = async (req, res, next) => {
@@ -56,3 +59,19 @@ export const deleteProductController=async(req,res,next)=>{
         }
 }
 
+
+export const uploadProductCoverController = async (req, res, next) => {
+    await productCoverUpload(req, res, async (error) => {
+        if (error) {
+            res.status(500).json({ error: error.message })
+        }
+        try {
+            const uploadedCover = req.file;
+            const coverUrl = 'uploads/' + uploadedCover.filename
+            const result = await Product.findByIdAndUpdate(req.params.id, { cover_url: coverUrl })
+            res.json({data:result})
+        } catch (error) {
+            next(error)
+        }
+    })
+}
