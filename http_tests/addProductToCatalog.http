@@ -1,9 +1,10 @@
 POST http://localhost:5000/api/v1/products/add
 Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjdmMjYyMmUzOGFiYzAzZTRkOTgzNzI1IiwiZW1haWwiOiJoZWxhbGlmZXJpZDJAZ21haWwuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzQzOTQwOTU3LCJleHAiOjE3NDQwMjczNTd9.wQw8hNZAYD5XFt91_Ooq7i5TUY_vulBl2Py9hCwG9yI
 
 {
-    "label":"Ordinateur Dell Optiplex i7 Laptop",
+    "label":"Ordinateur Dell Optiplex i7 Laptop New Gen",
     "brand":"Sony",
     "description":"Screen diamond",
-    "price":4250.123
+    "price":4250.123,
 }
