@@ -1,0 +1,11 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 239, 239, 0.562);
+    margin: 2%;
+    padding: 1%;
+}
