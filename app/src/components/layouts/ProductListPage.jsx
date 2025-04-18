@@ -1,9 +1,10 @@
-import MotorbikeList from '../Motorbike/MotorbikeList/MotorbikeList'
+import React from 'react'
+import ProductList from '../Product/ProductList/ProductList'
 
 function ProductListPage() {
   return (
     <div>
-      {/* <MotorbikeList /> */}
+       <ProductList /> 
     </div>
   )
 }

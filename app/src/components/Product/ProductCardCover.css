@@ -1,0 +1,8 @@
+.cardCover{
+    border-radius: 10%;
+ }
+ 
+ .cardCover > img{
+     width: 350px;
+     height: 220px;
+  }

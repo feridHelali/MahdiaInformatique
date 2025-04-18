@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding: 5%;
+}
+
+.productTable{
+  width: 100%;
+}
+
+.productTable_body{
+  font-size: large;
+}
+
+
+.cartHead__row{
+  background-color: black;
+  color: white;
+  padding: 1em;
+}
+
+.cartHead__cell{
+ height: 3rem;
+ padding: 5px;
+ margin: 2px;
+}
+
+.cart_foot {
+  width: 100%;
+  background-color: tomato;
+  color: wheat;
+  font-weight: 400;
+  font-size: 2rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 7px;
+  align-items: center;
+  justify-content: flex-end;
+}
