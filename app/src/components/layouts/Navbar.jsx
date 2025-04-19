@@ -145,7 +145,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            Forza Market
+            Mahdia Informatique
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (

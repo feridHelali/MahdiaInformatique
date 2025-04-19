@@ -3,7 +3,6 @@ import api from "../api/common.http";
 
 export const AuthContext = createContext(null);
 
-// eslint-disable-next-line react/prop-types
 function AuthContextProvider({ children }) {
   const [user, setUser] = useState(null);
 
